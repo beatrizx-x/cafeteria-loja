@@ -1,0 +1,106 @@
+:root {
+  --font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --fundo: #c6bba7;
+  --cor-marrom-claro: #7e3113;
+  --cor-preto: #020200;
+  --cor-marrom-escura: #250902;
+  --cor-beje: #c6bba7;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--cor-beje);
+}
+header{
+  width: 100%;
+}
+.hero {
+ background-image: linear-gradient(
+    to right, 
+    rgba(0, 0, 0, 0.85) 0%,    
+    rgba(0, 0, 0, 0.6) 40%,   
+    rgba(0, 0, 0, 0) 50%       
+  ), 
+  url(/img/hero.png); 
+width:  100%;
+  height: 650px;
+ background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
+
+}
+/*ondas de café, peguei no site https://www.shapedivider.app/ */
+.custom-shape-divider-bottom-1780247305 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1780247305 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 147px;
+}
+
+.custom-shape-divider-bottom-1780247305 .shape-fill {
+    fill: #C6BBA7;
+}
+header h1{
+  color: var(--cor-beje);
+font-family: var(--font-family);
+font-size: 50px;
+}
+header h2{
+  color:var(--cor-marrom-claro);
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.banner{
+  display: flex;
+flex-direction: column;
+padding: 250px 20px;
+width: 30%;
+}
+nav {
+  background-color: transparent;
+  display: flex;
+  padding: 10px 20px;
+  gap: 20px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  justify-content: space-between; 
+}
+
+nav a {
+  text-decoration: none;
+  border: var(--cor-marrom-claro) 1px solid;
+  width: 100px;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--cor-marrom-claro);
+  font-family: var(--font-family);
+  font-weight: 800;
+  letter-spacing: 2px;
+  transition: color 0.4s;
+}
+nav a:hover {
+  color: var(--cor-beje);
+}
+.navegacao {
+  display: flex;
+  gap: 30px;
+
+}
