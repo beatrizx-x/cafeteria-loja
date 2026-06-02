@@ -77,8 +77,7 @@ nav {
   background-color: transparent;
   display: flex;
   padding: 10px 20px;
-  gap: 20px;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   width: 100%;
   justify-content: space-between; 
@@ -103,4 +102,14 @@ nav a:hover {
   display: flex;
   gap: 30px;
 
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: space-evenly;
+padding: 150px;
+}
+figcaption{
+  width: 300px;
+ 
 }
